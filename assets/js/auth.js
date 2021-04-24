@@ -17,7 +17,7 @@ function lets_start_auth(){
 function login(){
 	console.log('signing in.');
 	$.ajax({
-	url:'https://api.sllc.cloud/main/login.php',
+	url:'https://api.sllc.cloud/ecoreport/login.php',
     type:'post',
     xhrFields: { withCredentials: true },
     crossDomain: true,
