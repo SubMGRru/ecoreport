@@ -25,7 +25,11 @@ function login(){
     crossDomain: true,
     data:{username:localStorage.getItem("email"),password:$("#password").val()},
 	success: function(data){
-		alert(data);
+		if(data == 1 || data == 2){
+			tata.success('Успешно!', 'Вы вошли в свою учетную запись');
+		}else{
+			tata.error('Ошибка', 'Неправильный пароль, попробуйте еще раз');
+		}
 	}
 });
 }

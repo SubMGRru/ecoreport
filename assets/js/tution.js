@@ -21,5 +21,5 @@ function complete_tution(){
 	console.log(blockname + 'обучение пройдено, записываем..');
 	localStorage.setItem('tution', 'passed');
 	console.log(blockname + 'покидаем скрипт, переадресация в приложение..');
-	window.location.href = "app.html";
+	window.location.href = "auth.html";
 }
