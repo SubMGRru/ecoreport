@@ -68,23 +68,4 @@
 	<p id="status">Подключение к серверам..</p>
 </div>
 </body>
-<script>
-		onlineStatus = 'none';
-		function onlineCheck(){
-			if(onlineStatus == 'none'){
-			//var ifConnected = window.navigator.onLine;
-			if (ifConnected) {
-			  onlineStatus = 'yes';
-			  console.log('OS side Internet connection detected.');
-			  window.location.href = 'newPage.html';
-			  document.getElementById("status").textContent="Загрузка приложения.."; 
-			} else {
-			  console.log('It look like that mobile datas disabled.');
-			  document.getElementById("status").textContent="Не удается подключиться к серверам";
-			}
-		  }
-		}
-		onlineCheck();
-		setInterval(onlineCheck, 4000);
-	</script>
 </html>
