@@ -1,2 +1,2 @@
 # ecoreport
-Репозиторий веб-приложения EcoReport. Доступ на .pages.dev
+Репозиторий веб-приложения EcoReport. Доступ на https://ecoreport.pages.dev/
