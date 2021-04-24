@@ -26,9 +26,13 @@ function login(){
     data:{username:localStorage.getItem("email"),password:$("#password").val()},
 	success: function(data){
 		if(data == 1 || data == 2){
-			tata.success('Успешно!', 'Вы вошли в свою учетную запись');
+			tata.success('Успешно!', 'Вы вошли в свою учетную запись', {
+  duration: 5000
+});
 		}else{
-			tata.error('Ошибка', 'Неправильный пароль, попробуйте еще раз');
+			tata.error('Ошибка', 'Неправильный пароль, попробуйте еще раз', {
+  duration: 5000
+});
 		}
 	}
 });
