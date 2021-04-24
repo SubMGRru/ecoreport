@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>app::loadingScreen</title>
+	<style type="text/css" media="screen">
+		body{
+			background: #000000;
+		}
+
+		#app{
+			overflow-x: hidden;
+			text-align: center;
+			margin-top:100%;
+
+		}
+
+		#app p{
+			color: white;
+			font-family: 'Roboto', sans-serif;
+			font-size: 12pt;
+			font-weight: 700;
+
+		}
+
+		.lds-ring {
+			  display: inline-block;
+			  position: relative;
+			  width: 80px;
+			  height: 80px;
+			}
+			.lds-ring div {
+			  box-sizing: border-box;
+			  display: block;
+			  position: absolute;
+			  width: 54px;
+			  height: 54px;
+			  margin: 8px;
+			  border: 4px solid #fff;
+			  border-radius: 50%;
+			  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+			  border-color: #FE752F transparent transparent transparent;
+			}
+			.lds-ring div:nth-child(1) {
+			  animation-delay: -0.45s;
+			}
+			.lds-ring div:nth-child(2) {
+			  animation-delay: -0.3s;
+			}
+			.lds-ring div:nth-child(3) {
+			  animation-delay: -0.15s;
+			}
+			@keyframes lds-ring {
+			  0% {
+			    transform: rotate(0deg);
+			  }
+			  100% {
+			    transform: rotate(360deg);
+			  }
+			}
+
+	</style>
+</head>
+<body>
+<div id="app">
+	<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+	<p id="status">Подключение к серверам..</p>
+</div>
+</body>
+<script>
+		onlineStatus = 'none';
+		function onlineCheck(){
+			if(onlineStatus == 'none'){
+			var ifConnected = window.navigator.onLine;
+			if (ifConnected) {
+			  onlineStatus = 'yes';
+			  console.log('OS side Internet connection detected.');
+			  window.location.href = 'newPage.html';
+			  document.getElementById("status").textContent="Загрузка приложения.."; 
+			} else {
+			  console.log('It look like that mobile datas disabled.');
+			  document.getElementById("status").textContent="Не удается подключиться к серверам";
+			}
+		  }
+		}
+		onlineCheck();
+		setInterval(onlineCheck, 4000);
+	</script>
+</html>
