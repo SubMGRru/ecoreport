@@ -21,7 +21,7 @@ function login(){
     type:'post',
     xhrFields: { withCredentials: true },
     crossDomain: true,
-    data:{email:localStorage.getItem("email"),password:$("#password").val()},
+    data:{username:localStorage.getItem("email"),password:$("#password").val()},
 	success: function(data){
 		alert(data);
 	}
