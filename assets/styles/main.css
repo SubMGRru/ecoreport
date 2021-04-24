@@ -38,6 +38,7 @@ p.inputhead{
     margin-left: auto;
     margin-right: auto;
 	margin-top: 20%;
+	margin-bottom: -1%;
 	font-family: Ubuntu;
 	font-style: normal;
 	font-weight: 500;
@@ -49,7 +50,6 @@ p.inputhead{
 
 input.logininput{
 	position: relative;
-	margin-top: -3%;
 	width: 99%;
 	height: 30px;
 	border: none;
