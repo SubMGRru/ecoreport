@@ -9,6 +9,13 @@ img.loginimage{
 	margin-top: 10%;
 }
 
+div.inputgroup{
+	width: 88%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 p.logintitle{
 	position: relative;
 	margin-top: 10%;
@@ -18,16 +25,8 @@ p.logintitle{
 	font-weight: 500;
 	font-size: 36px;
 	line-height: 41px;
-	text-align: center;
 
 	color: #4A690B;
-}
-
-div.inputgroup{
-	width: 88%;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 p.inputhead{
@@ -37,7 +36,7 @@ p.inputhead{
 	display: block;
     margin-left: auto;
     margin-right: auto;
-	margin-top: 20%;
+	margin-top: -5%;
 	margin-bottom: -1%;
 	font-family: Ubuntu;
 	font-style: normal;
@@ -64,9 +63,9 @@ button.loginbtn{
 	display: block;
     margin-left: auto;
     margin-right: auto;
-	position: relative;
-	margin-top: 10%;
-	width: 100%;
+	position: absolute;
+	bottom: 9%;
+	width: 85%;
 	height: 59px;
 	margin-top: 10%;
 	border: 1px solid #000000;
