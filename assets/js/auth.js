@@ -27,12 +27,14 @@ function login(){
 	success: function(data){
 		if(data == 1 || data == 2){
 			tata.success('Успешно!', 'Вы вошли в свою учетную запись', {
-  duration: 5000
-});
+			  duration: 5000
+			});
+		window.location.href = "app.html";
 		}else{
+			console.log(data);
 			tata.error('Ошибка', 'Неправильный пароль, попробуйте еще раз', {
-  duration: 5000
-});
+			  duration: 5000
+			});
 		}
 	}
 });
