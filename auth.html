@@ -8,7 +8,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/styles/main.css">
-	<script src="assets/js/auth.js"></script>
 	<script src="assets/js/required.js"></script>
 </head>
 <body>
@@ -17,9 +16,11 @@
 	<div class="inputgroup">
 		<p class="logintitle">Представьтесь</p>
 		<p class="inputhead">Электронный адрес</p>
-		<input type="email" class="logininput" name="email"><br>
-		<button type="button" class="loginbtn" onclick="console.log(1);"><p class="loginbtntxt">Продолжить <img height="18px" class="loginbtnimg" src="assets/images/icon_arrow.svg" alt="ожидается стрелочка"></p></button>
+		<input type="email" id="email" class="logininput" name="email"><br>
+		<button type="button" class="loginbtn" onclick="lets_start_auth()"><p class="loginbtntxt">Продолжить <img height="18px" class="loginbtnimg" src="assets/images/icon_arrow.svg" alt="ожидается стрелочка"></p></button>
 	</div>
 </div>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/auth.js"></script>
 </body>
 </html>
