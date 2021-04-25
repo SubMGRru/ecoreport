@@ -78,18 +78,7 @@ function register(){
 		    crossDomain: true,
 		    data:{firstname:localStorage.getItem("firstname"),lastname:$("#lastname").val(),email:localStorage.getItem("email"),password:$("#regpassword").val(),passwordConfirm:$("#regpassword").val()},
 			success: function(data){
-				if(data == 1 || data == 2){
-					tata.success('Успешно!', 'Вы вошли в свою учетную запись', {
-					  duration: 5000
-					});
-				localStorage.setItem('auth', 'loggedin');
-				window.location.href = "app.html";
-				}else{
-					console.log(data);
-					tata.error('Ошибка', 'Неправильный пароль, попробуйте еще раз', {
-					  duration: 5000
-					});
-				}
+				alert(data);
 			}
 		});
 	}else{
