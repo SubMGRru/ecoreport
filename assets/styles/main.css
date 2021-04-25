@@ -284,7 +284,11 @@ img.tutionimage{
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-radius: 3px;
+  border-radius: 7px;
   cursor: pointer;
   margin: 0 auto;
+  font-family: Ubuntu;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
 }
