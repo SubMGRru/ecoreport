@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<title>app::authModel</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+<div id="sendrequest">
+	<img class="basicimage" style="text-align: center;" src="assets/images/icon_location.svg" alt="Милый котик, который очень любит чистую природу, а Вы?">
+	<div class="inputgroup">
+		<p class="basictitle">Новое обращение</p>
+	</div>
+	<div id="waiting">
+		<p class="basictext">Необходимо разрешить приложению доступ к вашей геопозиции.<br><br>Эта информация необходима для получения точных координат происшедствия. </p>
+	</div>
+	<div id="blocked">
+		<p class="basictext">Вы отказали в доступе к вашей геопозиции. К сожалению, без этого мы не можем зафиксировать ваши координаты. </p>
+		<button type="button" class="basicbutton" onclick="window.location.reload(false)"><p class="loginbtntxt">Запросить еще раз </button>
+	</div>
+</div>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/tata.js"></script>
+<script src="assets/js/newquery.js"></script>
+<script src="assets/js/offline.min.js"></script>
+</body>
+</html>
