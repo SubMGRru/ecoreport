@@ -12,16 +12,31 @@
 </head>
 <body>
 <div id="sendrequest">
-	<img class="basicimage" style="text-align: center;" src="assets/images/icon_location.svg" alt="Милый котик, который очень любит чистую природу, а Вы?">
+	<img class="basicimage" id="demo" style="text-align: center;" src="assets/images/icon_location.svg" alt="Милый котик, который очень любит чистую природу, а Вы?">
 	<div class="inputgroup">
 		<p class="basictitle">Новое обращение</p>
 	</div>
 	<div id="waiting">
-		<p class="basictext">Необходимо разрешить приложению доступ к вашей геопозиции.<br><br>Эта информация необходима для получения точных координат происшедствия. </p>
+		<p class="basictext">Необходимо разрешить приложению доступ к вашей геопозиции.<br><br>Эта информация необходима для получения точных координат происшествия. </p>
 	</div>
 	<div id="blocked">
 		<p class="basictext">Вы отказали в доступе к вашей геопозиции. К сожалению, без этого мы не можем зафиксировать ваши координаты. </p>
 		<button type="button" class="basicbutton" onclick="window.location.reload(false)"><p class="loginbtntxt">Запросить еще раз </button>
+	</div>
+	<div id="queryform">
+		<div id="letsupload">
+			<p class="basictext">Давайте начнем со снимков: сфотографируйте происшедствие и прикрепите изображение. </p>
+			<div class="input__wrapper">
+			   <input class="classhere fileuploadbdn input input__file" type="file" name="logo" id="logo" />
+			   <label for="input__file" class="input__file-button">
+			      <span class="input__file-icon-wrapper"><img class="input__file-icon" src="assets/images/icon_upload.svg" alt="Выбрать файл" width="25"></span>
+			      <span class="input__file-button-text">Выберите файл</span>
+			   </label>
+			</div>
+		</div>
+		<p class="basictext" id="about_incident">Укажите дополнительную известную информацию о происшедствии </p>
+		<div class="imagearea"></div>
+		<button type="button" class="fileuploadbdn" onclick="uploadfile()"><p class="loginbtntxt">Выбрать.. </button>
 	</div>
 </div>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
