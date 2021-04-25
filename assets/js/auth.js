@@ -29,6 +29,7 @@ function login(){
 			tata.success('Успешно!', 'Вы вошли в свою учетную запись', {
 			  duration: 5000
 			});
+		localStorage.setItem('auth', 'loggedin');
 		window.location.href = "app.html";
 		}else{
 			console.log(data);
@@ -38,4 +39,8 @@ function login(){
 		}
 	}
 });
+}
+
+if(localStorage.getItem("auth") == 'loggedin'){
+	window.location.href = "app.html";
 }
