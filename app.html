@@ -34,9 +34,21 @@
 			   </label>
 			</div>
 		</div>
-		<div class="imagearea"></div>
+		<div id="additional_information">
+			<div class="imagearea"></div>
+			<p class="basictext">Снимок прикреплен. Пожалуйста, укажите дополнительные сведения. </p>
+			<p class="queryinputhead">Описание</p>
+			<input type="textarea" id="query_description" class="queryinput" name="firstname">
+			<p class="queryinputhead">Дополнительные заметки</p>
+			<input type="textarea" id="query_additional" class="queryinput" name="firstname">
+			<button type="button" class="basicbutton" onclick="querysend()"><p class="loginbtntxt">Отправить </button>
+		</div>
 	</div>
 </div>
+<div id="querythanks">
+			<img class="tutionimage" style="text-align: center;" src="assets/media/query_sent.gif" alt="Вау! Все отправлено">
+       		<div class="tutionbutton"><button class="tutionbuttonmodel" onclick="window.location.reload(false)">Далее</button></div>
+	</div>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/tata.js"></script>
 <script src="assets/js/newquery.js"></script>

@@ -1,10 +1,19 @@
 $("#blocked").hide();
 $("#queryform").hide();
 $("#about_incident").hide();
+$("#additional_information").hide();
+$("#querythanks").hide();
 navigator.geolocation.getCurrentPosition(success, error, {
   // высокая точность
   enableHighAccuracy: true
 })
+
+function querysend(){
+	console.log('queried');
+	$("#sendrequest").hide();
+	$("#querythanks").show();
+	document.body.style.background = '#6318BF';
+}
 
 function success({ coords }) {
   // получаем широту и долготу
@@ -46,10 +55,10 @@ $(document).ready(function(){
            img.src = reader.result;
            localStorage.theImage = reader.result; //stores the image to localStorage
            $(".imagearea").html(img);
-           $("#letsupload").hide();
-           $("#about_incident").show();
-       }
 
+       }
+       $("#letsupload").hide();
+       $("#additional_information").show();
        reader.readAsDataURL(file);//attempts to read the file in question.
     });
 });
