@@ -5,6 +5,12 @@
 
 body{
 	background: #E5E5E5;
+	height:100%;
+}
+
+body.tution_background{
+	background: #6318BF;
+	height:100%;
 }
 
 img.loginimage{
@@ -127,7 +133,7 @@ img.tutionimage{
 	position: relative;
 	width: 85%;
 	height: 59px;
-	border: 2px solid #EB3442;
+	border: transparent;
 	box-sizing: border-box;
 	background-color: white;
 	border-radius: 15px;
